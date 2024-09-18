@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <div class="navbar">
+            <img src="./assets/logo.png" alt="nts-logo" width="30px">
+            <ul class="navbar-list">
+                <li>HOME</li>
+                <li>LATEST</li>
+                <li>EXPLORE</li>
+                <li>INFINITE MIXTAPE</li>
+                <li>SHOP</li>
+                <li id="supporters-button">NTS SUPPORTERS</li>
+            </ul>
+        </div>
+        <div class="profile">
+            <button class="search-button">
+                <img src="./assets/search.png" height="25px" width="21px">
+            </button>
+            <input type="search" class="search-input">
+            <button class="chat-button"><img src="./assets/chat.png" height="25px" width="19px"></button>
+            <button class="my-profile-button"><img src="C:\Users\Manek\Desktop\Nit_clone\chat_files\069b6b6c-dd48-4ee2-8e35-2c2ca6b831cc_1668038400.png" height="25px" width="20px"></button>
+            <!-- Login Button to open the modal -->
+            <button id="loginBtn" class="login-button">Log In</button>
+        </div>
+    </div>
+
+    <div class="live-header">
+        <div class="text">Live now</div>
+        <div class="live1">
+            <div class="num">1</div>
+            Nirvana: Smells Like Teen Spirit
+            <div class="city">London</div>
+        </div>
+        <div class="live2">
+            <div class="num">2</div>
+            Metallica: Enter Sandman
+            <div class="city">Melbourne</div>
+        </div>
+    </div>
+    <div class="hero-section">
+        <div class="slides">
+            <div class="slide active">
+                <img src="./assets/asapriri.gif" alt="Slide 1">
+                <div class="caption">D.M.B.- Asap Rocky</div>
+            </div>
+            <div class="slide">
+                <img src="./assets/tame.webp" alt="Slide 2">
+                <div class="caption">Slow Rush - Tame Impala </div>
+            </div>
+            <div class="slide">
+                <img src="./assets/INSA-XL-1-600.gif" alt="Slide 3">
+                <div class="caption">Tequila shots - Kid Cudi</div>
+            </div>
+        </div>
+            <div class="slide">
+                <img src="./assets/weeknd.gif" alt="Slide 4">
+                <div class="caption">Starboy - The Weeknd</div>
+            </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="login-container">
+                <div class="login-box">
+                    <img src="./assets/logo.png" alt="NTS Logo" class="logo">
+                        <div class="input-box">
+                            <input type="email" placeholder="Username" required>
+                        </div>
+                        <div class="input-box">
+                            <input type="password" placeholder="Password" required>
+                        </div>
+                        <br>
+                        <div class="remember-me">
+                            <input type="checkbox" id="remember">
+                            <label for="remember">Stay signed in</label>
+                        </div>
+                        <br>
+                        <button type="submit" class="login-button">Log In</button>
+                </form>
+                <br>
+                    <div class="extra-options">
+                        <a href="#">Forgot password?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
