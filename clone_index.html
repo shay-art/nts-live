@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styless.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="header">
+        <div class="navbar">
+            <img src="./assets/logo.png" alt="nts-logo" width="30px">
+            <ul class="navbar-list">
+                <li>HOME</li>
+                <li>LATEST</li>
+                <li>EXPLORE</li>
+                <li>INFINITE MIXTAPE</li>
+                <li><a href="shop.html">Shop</a></li>
+                <li id="supporters-button">NTS SUPPORTERS</li>
+            </ul>
+        </div>
+        <div class="profile">
+            <button class="search-button">
+                <img src="./assets/search.png">
+            </button>
+            <input type="search" class="search-input">
+            <button class="chat-button" id="chatToggleButton"><img src="./assets/chat.png"></button>
+            <button class="my-profile-button"><img src="./assets/profile.png" ></button>
+
+            <!-- Login Button to open the modal -->
+            <button id="loginBtn" class="login-button">Login</button>
+        </div>
+    </div>
+
+    <!-- Live Header Section -->
+    <div class="live-header">
+        <div class="text">Live now</div>
+        <div class="live1">
+            <div class="num">1</div>
+            Nirvana: Smells Like Teen Spirit
+            <div class="city">London</div>
+        </div>
+        <div class="live2">
+            <div class="num">2</div>
+            Metallica: Enter Sandman
+            <div class="city">Melbourne</div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="slides">
+            <div class="slide active">
+                <img src="./assets/asapriri.gif" alt="Slide 1" style="width: 100%; height: auto;">
+                <div class="caption">D.M.B.- Asap Rocky</div>
+            </div>
+            <div class="slide">
+                <img src="./assets/tame.webp" alt="Slide 2" style="width: 100%; height: auto;">
+                <div class="caption">Slow Rush - Tame Impala</div>
+            </div>
+            <div class="slide">
+                <img src="./assets/INSA-XL-1-600.gif" alt="Slide 3" style="width: 100%; height: auto;">
+                <div class="caption">Tequila shots - Kid Cudi</div>
+            </div>
+            <div class="slide">
+                <img src="./assets/weeknd.gif" alt="Slide 4" style="width: 100%; height: auto;">
+                <div class="caption">Starboy - The Weeknd</div>
+            </div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <!-- Songs Section -->
+    <div class="songs">
+        <div class="song-card" style="display: inline-block;">
+            <img src="./assets/Unknown.jpeg" height="200px" width="200px" alt="Psycho Killer">
+            <p>Psycho Killer - Talking Heads</p>
+        </div>
+        <div class="song-card" style="display: inline-block;">
+            <img src="./assets/nosup.jpg" height="200px" width="200px" alt="No suprises">
+            <p>No suprises- Radiohead</p>
+        </div>
+        <div class="song-card" style="display: inline-block;">
+            <img src="./assets/queen.jpg" height="200px" width="200px"alt="Bohemian Rhapsody">
+            <p>Bohemian Rhapsody - Queen</p>
+        </div>
+        <div class="song-card" style="display: inline-block;">
+            <img src="./assets/bad.jpg" height="200px" width="200px" alt="Smooth criminal">
+            <p>Smooth criminal - Micheal Jackson</p>
+        </div>
+        <div class="song-card" style="display: inline-block;">
+            <img src="./assets/lsd.jpeg" height="200px" width="200px" alt="Like him">
+            <p>L$D - Asap rocky</p>
+        </div>
+        <div class="song-card" style="display: inline-block;">
+            <img src="./assets/ele.png" height="200px" width="200px" alt="LSD">
+            <p>Elephant - Tame Impala</p>
+        </div>
+        <div class="song-card" style="display: inline-block;">
+            <img src="./assets/home.png" height="200px" width="200px" alt="LSD">
+            <p>Homecoming - Kanye west</p>
+        </div>
+        <div class="song-card" style="display: inline-block;">
+            <img src="./assets/ty.png" height="200px" width="200px" alt="LSD">
+            <p>Like him- Tyler,The creator</p>
+        </div>
+        <div class="song-card" style="display: inline-block;">
+            <img src="./assets/locked.png" height="200px" width="200px" alt="LSD">
+            <p>Locked up - Akon</p>
+        </div>
+        <div class="song-card" style="display: inline-block;">
+            <img src="./assets/90.png" height="200px" width="200px" alt="LSD">
+            <p>90210- Travis scott</p>
+        </div>
+        <div class="song-card" style="display: inline-block;">
+            <img src="./assets/90.png" height="200px" width="200px" alt="LSD">
+            <p>90210- Travis scott</p>
+        </div>
+        <div class="song-card" style="display: inline-block;">
+            <img src="./assets/90.png" height="200px" width="200px" alt="LSD">
+            <p>90210- Travis scott</p>
+        </div>
+    </div>
+    
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="login-container">
+                <div class="login-box">
+                    <img src="./assets/logo.png" height="100px" width="125px" alt="NTS Logo" class="logo">
+                    <div class="input-box">
+                        <input type="email" placeholder="Username" required>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" placeholder="Password" required>
+                    </div>
+                    <br>
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Stay signed in</label>
+                    </div>
+                    <br>
+                    <button type="submit" class="login-button">Log In</button>
+                    <br>
+                    <div class="extra-options">
+                        <a href="#">Forgot password?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chat Container -->
+    <div class="chat-container" id="chatContainer" style="display: none;">
+        <header class="chat-header">
+            <h1>Customer Support Chat</h1>
+            <span class="close-chat" id="closeChat">&times;</span>
+        </header>
+        <div class="chat-content">
+            <div class="chat-body">
+                <div class="active-user">
+                    <p>Support Bot</p>
+                </div>
+                <div class="messages">
+                    <div class="message bot-message">
+                        <div class="message-text">Hello! I’m here to help you. How can I assist you today?</div>
+                    </div>
+                    <div class="message customer-message">
+                        <div class="message-text">I have a question about my recent order status.</div>
+                    </div>
+                </div>
+                <div class="input-container">
+                    <input type="text" id="chatInput" placeholder="Ask your question here...">
+                    <button id="sendMessageBtn">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
